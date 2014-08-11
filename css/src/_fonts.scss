@@ -1,0 +1,22 @@
+
+@import url(//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,600italic,800italic,300,600,800|La+Belle+Aurore:400);
+
+@mixin font {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+@mixin font-medium {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+}
+
+@mixin font-bold {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+}
+
+@mixin font-cursive {
+	font-family: "La Belle Aurore", cursive;
+	font-weight: 400;
+}

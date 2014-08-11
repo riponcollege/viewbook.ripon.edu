@@ -1,0 +1,118 @@
+
+
+.footer {
+	background-color: $black;
+	color: white;
+	text-align: center;
+	padding: 40px 20px 80px;
+
+	nav {
+		padding-top: 15px;
+
+		a {
+			color: white;
+			padding: 3px 10px;
+			display: block;
+			text-decoration: none;
+			transition: color 400ms ease-in-out;
+			
+			&:hover {
+				color: $red;
+			}
+		}
+
+		@include respond-to( 768px ) {
+			li {
+				display: inline;
+			}
+
+			a {
+				display: inline;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+.footer-quote {
+	background: $red;
+	padding: 0 0 40px;
+	color: white;
+	text-align: center;
+
+	@include respond-to( 600px ) {
+		padding: 0;
+		position: relative;
+	}
+
+	.footer-quote-content {
+		@include respond-to( 600px ) {
+			position: absolute;
+			left: 5%;
+			right: 5%;
+			bottom: 5%;
+		}
+
+		@include respond-to( 768px ) {
+			left: 8%;
+			right: 8%;
+			bottom: 8%;
+		}
+
+		@include respond-to( 1024px ) {
+			left: 12%;
+			right: 12%;
+			bottom: 15%;
+		}
+	}
+
+	img {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+
+		@include respond-to( 600px ) {
+			margin-bottom: 0;
+		}
+	}
+
+	h2, h5 {
+		text-shadow: 0 0 20px rgba( $black, .7 );
+
+		a {
+			color: white;
+		}
+	}
+	
+	h2 {
+		font-size: 2em;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-style: italic;
+		padding: 10px 20px;
+
+		@include respond-to( 768px ) {
+			font-size: 2.5em;
+		}
+	}
+
+	h5 {
+		padding: 10px 20px 40px;
+		line-height: 1.4em;
+	}
+
+	button {
+		display: block;
+		margin: 0 auto 5px;
+		padding: 10px;
+		@include font-bold;
+		font-size: 1em;
+		color: $red;
+		background: white;
+		border: 2px solid $red;
+		text-transform: uppercase;
+		box-shadow: 0 0 20px rgba( $black, .6 );
+	}
+}
+

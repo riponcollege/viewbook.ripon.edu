@@ -1,0 +1,301 @@
+@import url(//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,600italic,800italic,300,800,600);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote {
+  &:before, &:after {
+	content: "";
+  }
+}
+
+q {
+  &:before, &:after {
+	content: "";
+  }
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+.clearfix, .group {
+  zoom: 1;
+}
+
+.clearfix {
+  &:before, &:after {
+	content: "";
+	display: table;
+  }
+}
+
+.group {
+  &:before, &:after {
+	content: "";
+	display: table;
+  }
+}
+
+.clearfix {
+  clear: both;
+  &:before, &:after {
+	clear: both;
+  }
+}
+
+.group {
+  clear: both;
+  &:before, &:after {
+	clear: both;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #474a54;
+  font-size: 15px;
+  line-height: 22px;
+  background: #ccc;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+	font-size: 16px;
+	line-height: 24px;
+  }
+}
+
+a {
+  color: #b30838;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  &:hover {
+	color: #e40a47;
+  }
+  &.meta {
+	opacity: 0.5;
+	&:hover {
+	  opacity: 1;
+	}
+  }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  p, h1, h2, h3, h4, h5, h6 {
+	padding: 13px 0;
+  }
+}
+
+p.center, h1.center, h2.center, h3.center, h4.center, h5.center, h6.center {
+  text-align: center;
+}
+
+p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
+  text-align: right;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  span {
+    opacity: .6;
+  }
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.1em;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+
+h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+h6 {
+  font-size: .9em;
+  line-height: 1.1em;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #e5e5e8;
+  margin: 25px 0;
+}
+
+
+article {
+  ol, ul {
+	padding: 15px 0 15px 30px;
+  }
+  ol li, ul li {
+	padding: 0 0 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  article {
+	ol, ul {
+	  padding-left: 45px;
+	}
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+button {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  color: #b30838;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #b30838;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 20px rgba(37, 37, 42, 0.3);
+  box-shadow: 0 0 20px rgba(37, 37, 42, 0.3);
+}
+
+input {
+  &[type=submit], &[type=reset] {
+	padding: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	font-size: 1em;
+	color: #b30838;
+	text-decoration: none;
+	background: white;
+	border: 1px solid #b30838;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0 0 20px rgba(37, 37, 42, 0.3);
+	box-shadow: 0 0 20px rgba(37, 37, 42, 0.3);
+  }
+}
+
+.button {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1em;
+  color: #b30838;
+  text-decoration: none;
+  background: white;
+  border: 1px solid #b30838;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 20px rgba(37, 37, 42, 0.3);
+  box-shadow: 0 0 20px rgba(37, 37, 42, 0.3);
+}
+
+.quiet {
+  font-size: .9em;
+  color: #9295a2;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: white;
+}
+
+.site-content {
+  background: white;
+}
+

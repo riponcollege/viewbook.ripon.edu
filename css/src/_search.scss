@@ -1,0 +1,95 @@
+.search-box {
+  background: #b30838;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  transition: height 400ms ease-in-out;
+  a, h2, h3 {
+	color: white;
+	text-decoration: none;
+  }
+  a:hover {
+	color: #25252a;
+  }
+  ul {
+	list-style: none;
+  }
+  h2 {
+	padding: 10px 0 30px;
+  }
+  form {
+	zoom: 1;
+	&:before, &:after {
+	  content: "";
+	  display: table;
+	}
+	clear: both;
+	&:before, &:after {
+	  clear: both;
+	}
+  }
+  input {
+	&[type=text] {
+	  padding: 10px;
+	  border: 0;
+	  font-size: 18px;
+	  width: 100%;
+	}
+	&[type=submit] {
+	  padding: 10px;
+	  border: 0;
+	  font-size: 18px;
+	  width: 100%;
+	  background-color: #25252a;
+	  color: white;
+	}
+  }
+  .column {
+	text-align: left;
+	padding: 20px 0;
+	ul {
+	  padding: 0 0 30px;
+	}
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .search-box {
+	padding: 30px 5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-box {
+	padding: 30px 10%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .search-box input {
+	&[type=text], &[type=submit] {
+	  width: 75%;
+	}
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-box input {
+	&[type=text], &[type=submit] {
+	  width: 50%;
+	}
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .search-box input[type=submit] {
+	width: 20%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .search-box .column {
+	width: 50%;
+	float: left;
+  }
+}

@@ -1,0 +1,33 @@
+
+
+// set colors
+$grey: #5f626f;
+$red: #b30838;
+$black: #25252A;
+
+$link-color: $red;
+
+
+// mixin library
+@import "mixins";
+
+// font import and mixins
+@import "fonts";
+
+// base styles
+@import "base";
+
+
+// then we'll include the section-specific styles
+@import "header";
+@import "showcase";
+@import "content";
+@import "photos";
+@import "tiles";
+@import "stories";
+@import "quotes";
+@import "search";
+@import "footer";
+
+
+@import "lightbox";

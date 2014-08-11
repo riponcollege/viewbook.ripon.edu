@@ -1,0 +1,56 @@
+
+
+.tiles {
+	@include clearfix;
+	padding: 30px 0;
+	
+	&.tile-1 {
+		padding: 0 0 30px;
+	}
+	
+	.tile {
+		position: relative;
+
+		img {
+			display: block;
+		}
+
+		blockquote {
+			position: absolute;
+			bottom: 20%;
+			left: 5px;
+			right: 5px;
+			font-size: 30px;
+			line-height: 38px;
+			text-align: center;
+			text-transform: uppercase;
+			@include font-medium;
+			@include text-over-photo;
+		}
+
+		@include respond-to( 500px ) {
+			float: left;
+			width: 50%;
+		}
+		@include respond-to( 960px ) {			
+			width: 33.3333%;
+
+			&.large {
+				width: 66.6666%;
+			}
+		}
+	}
+	
+	.tile-content {
+		padding: 0 30px;
+
+		@include respond-to( 500px ) {
+			float: left;
+			width: 50%;
+		}
+		@include respond-to( 960px ) {
+			width: 33.3333%;
+		}
+	}
+}
+

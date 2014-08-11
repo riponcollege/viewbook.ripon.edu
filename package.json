@@ -1,0 +1,15 @@
+{
+    "name" : "ripon-viewbook",
+    "version" : "0.0.1",
+    "devDependencies" : {
+        "grunt" :                       "latest",
+        "grunt-contrib-cssmin":         "*",
+        "grunt-contrib-sass":           "*",
+        "grunt-contrib-uglify":         "*",
+        "grunt-contrib-watch":          "*",
+        "grunt-contrib-imagemin":       "*",
+        "grunt-autoprefixer":           "*",
+        "grunt-rsync-2":                "*",
+        "matchdep":                     "*"
+    }
+}

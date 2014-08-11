@@ -1,0 +1,82 @@
+.stories .story {
+  min-height: 200px;
+  text-align: center;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 25px rgba(37, 37, 42, 0.6);
+  img {
+	display: block;
+  }
+  h3 {
+	font-size: 1.7em;
+	text-transform: uppercase;
+	padding: 5px 30px;
+  }
+  p {
+	padding: 5px 30px 15px;
+  }
+  .caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0 0 20px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .stories .story {
+	float: left;
+	width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .stories .story {
+	width: 33.3333%;
+  }
+}
+
+.story-image img {
+  display: block;
+}
+
+@media only screen and (min-width: 500px) {
+  .story-image.third {
+	width: 50%;
+	float: left;
+	&.right {
+	  float: right;
+	}
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .story-image.third {
+	width: 33.3333%;
+  }
+}
+
+.story-two-column-content {
+  clear: both;
+  .column {
+	padding: 10px 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .story-two-column-content {
+	clear: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .story-two-column-content .column {
+	width: 33.3333%;
+	padding: 5px 25px;
+	float: left;
+	font-size: 85%;
+	line-height: 1.6em;
+  }
+}
+
