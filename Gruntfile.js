@@ -30,7 +30,8 @@ module.exports = function(grunt) {
                 files: {
                     'js/main.js': [
                         'js/magnific/dist/jquery.magnific-popup.min.js',
-                        'js/src/*.js'
+                        'js/src/showcase.js',
+                        'js/src/main.js'
                     ]
                 }
             }
