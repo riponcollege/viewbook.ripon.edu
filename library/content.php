@@ -85,7 +85,7 @@ function the_alternating_content() {
             if ( !empty( $title ) && !empty( $description ) && !empty( $button_label ) && !empty( $link ) && !empty( $image ) ) {
             	?>
             <div class="row <?php print ( is_int( $row / 2 ) ? "even" : "odd" ); ?>">
-                    <img src="<?php print $image; ?>" alt="<?php print $title ?>"></a>
+                    <a href="<?php print $link ?>"><img src="<?php print $image; ?>" alt="<?php print $title ?>"></a>
                     <div class="row-content">
 	                    <h2><a href="<?php print $link ?>"><?php print $title ?></a></h2>
 	                    <p><?php print $description ?></p>
