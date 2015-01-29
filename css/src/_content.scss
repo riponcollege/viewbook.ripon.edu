@@ -58,6 +58,10 @@
 
 .content-alternating {
 	padding: 30px 0;
+			
+	.row-content {
+		padding: 20px;
+	}
 
 	@include respond-to( 700px ) {
 		padding: 50px 0;
