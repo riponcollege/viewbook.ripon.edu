@@ -5,6 +5,8 @@
 
 get_header(); 
 
+query_posts( 'posts_per_page=30' );
+
 ?>
 
 	<section id="primary" class="content-area">
