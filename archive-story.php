@@ -5,6 +5,12 @@
 
 get_header(); 
 
+$args = array(
+	'post_type'			=> 'story',
+	'posts_per_page'	=> 30
+);
+
+query_posts( $args );
 
 ?>
 
